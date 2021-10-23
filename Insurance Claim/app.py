@@ -14,8 +14,8 @@ def loadPage():
 
 
 
-@app.route("/", methods=['POST'])
-def InsuranceClaimPrediction():
+@app.route("/predict", methods=['POST'])
+def predict():
     
     inputQuery1 = request.form['query1']
     inputQuery2 = request.form['query2']
